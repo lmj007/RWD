@@ -41,8 +41,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
 }
-.log, .member, .search-form
-{
+.logo, .member, .search-form{
   width: 100%;
   padding: 0 20px;
 }
@@ -53,7 +52,6 @@ body{
 /* 모바일 멤버링크 */
 .member{
   background: #988574;
-  margin: 0 -20px;
   order: -1;
   display: flex;
   justify-content: flex-end;
@@ -120,17 +118,17 @@ body{
     border-radius: 5px;
     width: 400px;
     padding: 5px 10px;
-    height: 28px;
+    height: 35px;
   }
 
   .btn-search{
-    width:60px;
+    /* width:50px; */
     padding: 5px 10px;
     border: 1px solid #ccc;
     background: #988574;
     border-radius: 5px;
     color: #fff;
-    height: 28px;
+    height: 35px;
   }
 
 }
