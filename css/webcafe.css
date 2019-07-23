@@ -43,7 +43,6 @@ input[type="search"]{
 .search-form label, input[type="search"], .btn-search{
   vertical-align: middle;
 }
-
 /* 모바일 레이아웃 */
 @media screen and (min-width: 320px) and (max-width: 999px){
   .header{
@@ -83,15 +82,83 @@ input[type="search"]{
     width: calc(100% - 35px);
   }
   .btn-search{
-    background: transparent url('./images/btn_search.png') no-repeat;
-    background-size: 100%;
+    position: relative;
+    background: transparent;
     width: 30px;
     height: 30px;
     border: 0;
     padding: 0;
   }
-}
+  .btn-search::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url('./images/btn_search.png') no-repeat;
+    background-size: 100%;
+  }
+  /* 모바일 메인메뉴 */
+  .btn-menubar{
+    position: absolute;
+    background: transparent;
+    top: 55px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .menubar{
+    background: #fff;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    transition: all 0.2s;
+  
+  }
+  .menubar-top{
+    top: 0;
+  }
+  .menubar-middle{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .menubar-bottom{
+    top: 100%;
+    transform: translateY(-100%);
+  }
 
+  .is-act .menubar-top{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .is-act .menubar-middle{
+    transform: translate(-100%, -50%);
+  }
+  .is-act .menubar-bottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .menu{
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    transform: translateX(-100%);
+    transition: all 0.2s;
+  }
+  .is-act .menu{
+    transform: translateX(0);
+  }
+}
 /* 데스크탑 레이아웃 */
 @media screen and (min-width: 1000px){
   /* 데스크탑 레이아웃 */
@@ -148,9 +215,9 @@ input[type="search"]{
     color: #fff;
     height: 30px;
   }
-  .btn-search::before{
+  /* .btn-search::before{
     content: '검색';
-  }
+  } */
   /* 데스크탑 메인메뉴 */
   .btn-menubar{
     display: none;
@@ -159,35 +226,29 @@ input[type="search"]{
     background: #988574;
     box-shadow: 0px -2px 3px 0 #666, 0px 2px 3px 0 #666;
   }
-
- .menu::after{
-   content: "";
-
-   display: block;
-   clear: both;
- }
- .menu li{
-   margin-top: 1em;
-   margin-bottom: 1em;
-   
- }
+  .menu::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .menu li{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   .menu-list{
     float: left;
     color: #fff;
     margin-left: 111px;
   }
-  .menu li:first-child .sub-menu{
+  .menu-list:first-child{
     margin-left: 0;
   }
-
   .menu-item{
-    font-size:  1.6rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
   }
-.sub-menu{
-  margin-left: 1.5em;
-}
-
-
+  .sub-menu{
+    margin-left: 1.5em;
+  }
 }
