@@ -18,13 +18,15 @@
 <form action="https://formspree.io/mjung00700@gmail.com" method="POST" class="search-form">
   <fieldset>
   <legend>검색폼</legend>
-    <label for="search">검색어</label>
+    <label for="search" class="a11y-hidden">검색어</label>
     <input type="search" id="search" placeholder="검색어를 입력하세요" required name="keyword">
     <button class="btn-search" type="submit">검색</button>
-  </fieldset></form>
+   <!-- <a class="btn-search" href="#" role="button">검색</a>-->
+  </fieldset>
+</form>
 
   </header>
-  <header class="header">헤더</header>
+  <header class="header"></header>
   <nav class="navigation">내비게이션</nav>
   <main class="main">메인 콘텐츠</main>
   <footer class="footer">푸터</footer>
