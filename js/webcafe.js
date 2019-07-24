@@ -30,11 +30,27 @@ if(viewport.matches){
 
     li.on('click keydown',function(e){
       if(e.type === 'click' || (e.type === 'keydown' && e.keyCode === 13)){
+
+        if($(this).hasClass('menu-act')){
+          $(this).removeClass('menu-act');
+          span.removeClass('icon-minus').addClass('icon-plus');
+        }else{
         //e.preventDefault(); -> 기본 이벤트 없앰. 예를 들면 a href의 링크 이동같은 경우
-        li.removeClass('menu-act');
-        span.removeClass('icon-minus').addClass('icon-plus');
-        $(this).find('.menu-item').removeClass('icon-plus').addClass('icon-minus');
-        $(this).addClass('menu-act');
+          li.removeClass('menu-act');
+          span.removeClass('icon-minus').addClass('icon-plus');
+          span.attr('aria-expanded','false');
+          $(this).find('.menu-item').removeClass('icon-plus').addClass('icon-minus');
+          $(this).find('.menu-item').attr('aria-expanded','true')
+          $(this).addClass('menu-act');
+        }
+
       }
-    })
+    });
+
+  menu.on('focusout', function(){
+      nav.removeClass('is-act');
+  });
+  menu.on('focusin', function(){
+      nav.addClass('is-act');
+  });
 }
