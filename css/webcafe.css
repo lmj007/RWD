@@ -136,6 +136,12 @@ input[type="search"]{
   text-align: right;
 }
 /* 공통 게시판 */
+.board{
+  position: relative;
+}
+.board-list li{
+  margin: 0.5em 0;
+}
 .board-list a, .board-list time{
   display: inline-block;
   overflow: hidden;
@@ -150,7 +156,8 @@ input[type="search"]{
 .board-more{
   position: absolute;
   top: 1.5em;
-  right: 0;
+  right: -0.5em;
+  padding: 0.5em;
 }
 /* 인기 사이트 목록 공통 */
 .favorite-site-list {

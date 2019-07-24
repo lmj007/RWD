@@ -1,0 +1,145 @@
+8/12 구글 웹디자인
+
+https://keycode.info/ 
+
+10, 12, 16, 24 
+grid system generator  - http://gridcalculator.dk/
+flex, float, grid
+https://uid.gitbook.io/css-grid/
+
+NVDA - 스크린리더 테스트
+
+------------------------------------------------------------------
+* 레이아웃(헤더)
+마크업
+숨김컨텐츠 (클래스)
+: 보조기기(스크린리더)는 접근해야 함
+
+*모바일 레이아웃
+*데스크탑레이아웃
+
+web developer rule
+
+구글 2019 breakpoints 검색 - 기기별 표준
+https://ricostacruz.com/til/css-media-query-breakpoints
+
+------------------------------------------------------------------
+https://github.com/lmj007/RWD
+
+구조설계(컨덴츠 중심)
+1.논리적인 순서
+2.시맨틱 마크업
+3.네이밍
+
+
+
+smacss oocss bem
+https://wit.nts-corp.com/2015/04/16/3538
+WAI-ARIA
+
+레이아웃, 스토리보드, 프로토타입변화
+
+
+터미널에서 
+$ git remote add origin git내주소
+
+확인하기
+$ git remote 
+origin
+
+보내기
+$ git push origin master
+로그인 창
+
+
+
+
+https://formspree.io/ : 메일로 폼의 서밋값을 받을 수 있는 서비스
+
+* CSS 스타일
+uass(웹브라우저 스타일)
+ass(제작자 스타일)
+
+* 링크스타일  *상속
+DOM tree
+css에서 상속받은 값보다 내가 갖고 있는 값이 우선
+
+* 기본스타일
+글꼴
+@font-face 웹폰트 선언
+
+seulbinim@
+
+
+
+===개발환경 설정
+웹 브라우저
+Chrome 다운로드
+Firefox 다운로드
+
+===웹 브라우저 확장 프로그램 : chrome 웹 스토어에서 검색
+Web Developer
+HeadingsMap-> total11y
+OpenWAX
+ColorZilla
+WhatFont
+Viewport Resizer : x
+
+===에디터 및 확장 프로그램과 Code Theme
+Visual Studio Code 다운로드  : https://code.visualstudio.com/
+보기 -> 확장 -> 실습에 필요한 항목 검색 후 설치: vs에서 확장아이콘 - 검색
+Live Server
+Prettier-Code Formatter
+Auto Close Tag
+Auto Rename Tag
+HTML Snippets: x
+CSS Peek:x
+vscode-icons : 테마
+Atom Keymap:x
+Monokai-Contrast Theme : 테마
+
+===Git과 Github
+Git 다운로드 : https://git-scm.com/downloads
+Git 간편 안내서
+Git 초기설정 시작하기 : https://git-scm.com/book/ko/v1/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95
+누구나 쉽게 이해할 수 있는 Git입문
+Github 가입하기
+
+vs에서 보기- 터미널
+ 사용자 설정
+소스코드에서 live server로 브라우저 실행
+
+
+*** 생활코딩 git으로 검색해서 강습가능
+git bash : 구글 검색 vs code git bash terminal : C:\Program Files\Git\git-bash.exe 설정에서 설치
+
+
+===NVM (해당 없음)
+NVM 다운로드
+NVM을 사용하여 node.js 설치
+설치할 node 버전 확인
+NVM으로 node 설치 후 nvm use 명령을 통해 node 활성화
+node-sass 설치 및 버전 확인
+npm install --global node-sass
+node-sass -v
+
+----------------------------
+WEB TECH concert 
+8월 9일, 30일 예정
+
+----------------------------
+
+이미지의 버튼의 CSS처리
+메뉴의 텍스트화
+화면 폭의 픽셀에서 %로
+
+원소스의 웹접근성 작업은 3배 이상의 작업과 수많은 고려사항 반영해야
+- 새로운 기술의 활용하여 생산성을 높일 수 있다. 
+유저 중신ㅁ과
+- 지속적인 교육
+
+* 화면의 표준 해상도 변경
+* IE의 브라우저 점유율 낮아짐
+
+
+
